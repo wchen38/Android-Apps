@@ -7,12 +7,12 @@ import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
 import android.view.MenuItem;
 
-import com.example.wuyuan.clone_instagram.HomeActivity;
-import com.example.wuyuan.clone_instagram.LikesActivity;
-import com.example.wuyuan.clone_instagram.ProfileActivity;
+import com.example.wuyuan.clone_instagram.Home.HomeActivity;
+import com.example.wuyuan.clone_instagram.Likes.LikesActivity;
+import com.example.wuyuan.clone_instagram.Profile.ProfileActivity;
 import com.example.wuyuan.clone_instagram.R;
-import com.example.wuyuan.clone_instagram.SearchActivity;
-import com.example.wuyuan.clone_instagram.ShareActivity;
+import com.example.wuyuan.clone_instagram.Search.SearchActivity;
+import com.example.wuyuan.clone_instagram.Share.ShareActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class BottomNavigationViewHelper {
