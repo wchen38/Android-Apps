@@ -28,13 +28,12 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            android:text="TextView"
+            android:text="300"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/tvFollowing"
             app:layout_constraintStart_toEndOf="@+id/tvPosts"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="300" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textFollowers"
