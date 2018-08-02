@@ -1,4 +1,4 @@
-package com.example.wuyuan.clone_instagram.Home;
+package com.example.wuyuan.clone_instagram.Utils;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

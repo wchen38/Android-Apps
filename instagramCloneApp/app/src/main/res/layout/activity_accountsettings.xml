@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:background="@color/ture_white">
 
+    <include layout="@layout/layout_center_viewpager"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
