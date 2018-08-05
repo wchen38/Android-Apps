@@ -37,6 +37,13 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
     //universal image loader
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
+
+    //    //firebase
+    //implementation 'com.google.firebase:firebase-core:16.0.2'
+    //firebase authenitication
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
 }
+//firebase
+apply plugin: 'com.google.gms.google-services'
