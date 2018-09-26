@@ -6,10 +6,16 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton fab;
+    List<Task> taskList;
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
             }
         });
+
+        taskList = new ArrayList<>();
+        taskList.add(new Task("physics", "5"));
+
+        listView = (ListView) findViewById(R.id.listView_id);
+
+        CustomListAdapter adapter = new
+                CustomListAdapter(this, R.layout.my_list_item_layout, taskList);
+
+        listView.setAdapter(adapter);
+
+
 
     }
 }
