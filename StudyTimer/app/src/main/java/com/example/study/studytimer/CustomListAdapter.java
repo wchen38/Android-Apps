@@ -38,7 +38,7 @@ public class CustomListAdapter extends ArrayAdapter<Task>{
         View view = inflater.inflate(resource, null);
         TextView tvTask = view.findViewById(R.id.task_view_id);
         TextView tvHour = view.findViewById(R.id.time_view_id);
-        playSelect = view.findViewById(R.id.imageButton2);
+        playSelect = view.findViewById(R.id.play_pause_id);
         playSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
