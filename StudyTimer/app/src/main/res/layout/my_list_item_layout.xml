@@ -28,7 +28,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_alignParentRight="true"
-
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:text="TextView"
@@ -46,7 +45,10 @@
         android:layout_marginLeft="15dp"
         android:background="@null"
         android:scaleType="fitXY"
-        android:src="@drawable/play_btn" />
+        android:src="@drawable/play_btn"
+        android:onClick="myClickHandler"
+
+        />
 
 </RelativeLayout>
 

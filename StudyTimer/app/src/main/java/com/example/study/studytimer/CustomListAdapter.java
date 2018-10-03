@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -18,8 +20,8 @@ public class CustomListAdapter extends ArrayAdapter<Task>{
     Context mCtx;
     int resource;
     List<Task> taskList;
-    ImageButton playSelect;
     private boolean isPressed = false;
+
 
     public CustomListAdapter(Context mCtx, int resource, List<Task> taskList) {
         super(mCtx, resource, taskList);
@@ -38,7 +40,10 @@ public class CustomListAdapter extends ArrayAdapter<Task>{
         View view = inflater.inflate(resource, null);
         TextView tvTask = view.findViewById(R.id.task_view_id);
         TextView tvHour = view.findViewById(R.id.time_view_id);
-        playSelect = view.findViewById(R.id.play_pause_id);
+
+        final ImageButton playSelect = view.findViewById(R.id.play_pause_id);
+
+
         playSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,12 +56,14 @@ public class CustomListAdapter extends ArrayAdapter<Task>{
             }
         });
 
-        Task task = taskList.get(position);
-        Log.d("getViewCustomList", "getView: " + task.getTask_name());
-        tvTask.setText(task.getTask_name());
-        tvHour.setText(task.getNum_hours());
+//        Task task = taskList.get(position);
+//        Log.d("getViewCustomList", "getView: " + task.getTask_name());
+//        tvTask.setText(task.getTask_name());
+//        tvHour.setText(task.getNum_hours());
 
         return view;
     }
+
+
 
 }

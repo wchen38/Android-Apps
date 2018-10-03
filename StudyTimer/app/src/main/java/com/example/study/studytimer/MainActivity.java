@@ -8,7 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,14 +45,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
         taskList = new ArrayList<>();
-       // taskList.add(new Task(task_key, time_key));
+
 
         listView = (ListView) findViewById(R.id.listView_id);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.d("positionoflistview", "onItemClick: " + i);
+                Toast.makeText(MainActivity.this,
+                        "Item in position " + i + " clicked", Toast.LENGTH_LONG).show();
+            }
+        });
 
         adapter = new
                 CustomListAdapter(this, R.layout.my_list_item_layout, taskList);
 
         listView.setAdapter(adapter);
+
 
 
 
